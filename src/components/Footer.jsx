@@ -27,9 +27,9 @@ const Footer = () => {
             <div>
               <h3 className="text-lg font-semibold text-white mb-4">Contact Us</h3>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>Email: info@example.com</li>
-                <li>Phone: +123 456 7890</li>
-                <li>Address: 123 Main Street, City</li>
+                <li>Email: mustafa.rahman.official@gmail.com</li>
+                <li>Phone: +8801840643946</li>
+                <li>Address: mirsarai,Chattogram.</li>
               </ul>
             </div>
   
@@ -92,7 +92,7 @@ const Footer = () => {
           {/* Footer Bottom */}
           <div className="border-t border-gray-700 mt-6 pt-4">
             <p className="text-center text-sm text-gray-400">
-              &copy; 2025 Your Company. All rights reserved.
+              &copy; 2025 . All rights reserved by Mustafa Rahman.
             </p>
           </div>
         </div>

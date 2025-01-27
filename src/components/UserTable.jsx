@@ -27,10 +27,10 @@ const UserTable = ({ onEdit }) => {
   };
 
   return (
-    <div className="overflow-x-auto bg-white rounded-lg shadow-md">
+    <div className="overflow-x-auto overflow-y-auto bg-white h-[90%] rounded-lg shadow-md">
        <ToastContainer position="top-right" autoClose={3000} hideProgressBar />
       {/* Table Header */}
-      <table className="min-w-full">
+      <table className="min-w-full ">
         <thead>
           <tr className="bg-gray-800 text-white">
             <th className="py-3 px-6 text-left">Name</th>
@@ -66,7 +66,7 @@ const UserTable = ({ onEdit }) => {
                 <td className="py-3 px-6">{user.name}</td>
                 <td className="py-3 px-6">{user.email}</td>
                 <td className="py-3 px-6">
-                  {}
+                  
                   <button
                     className="text-blue-500 hover:cursor-pointer hover:text-blue-700 mr-3"
                     onClick={() => onEdit(user)}

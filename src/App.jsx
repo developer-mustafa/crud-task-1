@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <Router>
+      
       <div className="min-h-screen bg-gray-800 text-white">
         <Routes>
           <Route path="/" element={<HomePage />} />
