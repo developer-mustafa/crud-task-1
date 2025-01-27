@@ -1,13 +1,13 @@
 const Footer = () => {
     return (
-      <footer className="bg-gray-900 text-gray-300">
+      <footer className="bg-gradient-to-r from-blue-500 to-indigo-500 text-gray-300">
         <div className="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
         
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* About Us Section */}
             <div>
               <h3 className="text-lg font-semibold text-white mb-4">About Us</h3>
-              <p className="text-sm text-gray-400">
+              <p className="text-sm ">
                 We are committed to providing the best services to help you achieve your goals. Your satisfaction is our priority.
               </p>
             </div>
@@ -15,7 +15,7 @@ const Footer = () => {
             {/* Services Section */}
             <div>
               <h3 className="text-lg font-semibold text-white mb-4">Services</h3>
-              <ul className="space-y-2 text-sm text-gray-400">
+              <ul className="space-y-2 text-sm ">
                 <li>Web Development</li>
                 <li>UI/UX Design</li>
                 <li>SEO Optimization</li>
@@ -26,7 +26,7 @@ const Footer = () => {
             {/* Contact Us Section */}
             <div>
               <h3 className="text-lg font-semibold text-white mb-4">Contact Us</h3>
-              <ul className="space-y-2 text-sm text-gray-400">
+              <ul className="space-y-2 text-sm ">
                 <li>Email: mustafa.rahman.official@gmail.com</li>
                 <li>Phone: +8801840643946</li>
                 <li>Address: mirsarai,Chattogram.</li>
@@ -39,7 +39,7 @@ const Footer = () => {
               <div className="flex space-x-4">
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-white transition"
+                  className=" hover:text-white transition"
                   aria-label="Facebook"
                 >
                   <svg
@@ -55,7 +55,7 @@ const Footer = () => {
                 </a>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-white transition"
+                  className=" hover:text-white transition"
                   aria-label="Twitter"
                 >
                   <svg
@@ -71,7 +71,7 @@ const Footer = () => {
                 </a>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-white transition"
+                  className=" hover:text-white transition"
                   aria-label="Instagram"
                 >
                   <svg
@@ -91,7 +91,7 @@ const Footer = () => {
           </div>
           {/* Footer Bottom */}
           <div className="border-t border-gray-700 mt-6 pt-4">
-            <p className="text-center text-sm text-gray-400">
+            <p className="text-center text-sm ">
               &copy; 2025 . All rights reserved by Mustafa Rahman.
             </p>
           </div>
