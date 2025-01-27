@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const ConfirmModalBox = ({ isOpen, onClose, onConfirm, userName }) => {
     if (!isOpen) return null;
   
@@ -5,7 +6,7 @@ const ConfirmModalBox = ({ isOpen, onClose, onConfirm, userName }) => {
       <div className="fixed inset-0 flex justify-center items-center bg-gray-800 bg-opacity-30">
         <div className="bg-white rounded-lg shadow-lg p-6 max-w-sm w-full">
           <h2 className="text-xl font-semibold text-gray-700">Confirm Deletion</h2>
-          <p className="text-gray-600 mt-2">Are you sure you want to delete the user "{userName}"?</p>
+          <p className="text-gray-600 mt-2">Are you sure you want to delete the user {userName}?</p>
           <div className="mt-4 flex justify-end space-x-3">
             <button
               onClick={onClose}

@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
 
 import { useState } from "react";
 import { useGetUsersQuery, useDeleteUserMutation } from "../redux/apiSlice";
-import { FaTrash, FaEdit, FaSpinner } from "react-icons/fa"; // Import spinner from react-icons
-import Modal from "./ConfirmModalBox"; // Import the Modal component
+import { FaTrash, FaEdit, FaSpinner } from "react-icons/fa"; 
+import { toast, ToastContainer } from 'react-toastify'; // Import Toast
+import Modal from "./ConfirmModalBox"; 
 
 const UserTable = ({ onEdit }) => {
   const { data: users, isLoading, isError } = useGetUsersQuery();
@@ -17,7 +19,8 @@ const UserTable = ({ onEdit }) => {
 
   const handleConfirmDelete = () => {
     if (selectedUser) {
-      deleteUser(selectedUser._id); // Call deleteUser API with the selected user ID
+      deleteUser(selectedUser._id); 
+      toast.error('User Deleted successfully!')
       setIsModalOpen(false); // Close the modal
       setSelectedUser(null); // Reset selected user
     }
@@ -25,6 +28,7 @@ const UserTable = ({ onEdit }) => {
 
   return (
     <div className="overflow-x-auto bg-white rounded-lg shadow-md">
+       <ToastContainer position="top-right" autoClose={3000} hideProgressBar />
       {/* Table Header */}
       <table className="min-w-full">
         <thead>
@@ -38,10 +42,10 @@ const UserTable = ({ onEdit }) => {
         {/* Table Body */}
         <tbody>
           {isLoading ? (
-            // Show dynamic loading rows while the data is loading
+            // Show dynamic loading 
             <tr>
               <td colSpan="3" className="py-3 px-6 text-center">
-                {/* Professional spinner with animation */}
+                {/*  spinner with animation */}
                 <div className="flex justify-center items-center py-10">
                   <FaSpinner className="animate-spin text-blue-500 text-4xl" />
                   <span className="ml-3 text-gray-500 font-semibold">Loading data...</span>
@@ -62,7 +66,7 @@ const UserTable = ({ onEdit }) => {
                 <td className="py-3 px-6">{user.name}</td>
                 <td className="py-3 px-6">{user.email}</td>
                 <td className="py-3 px-6">
-                  {/* Action buttons */}
+                  {}
                   <button
                     className="text-blue-500 hover:cursor-pointer hover:text-blue-700 mr-3"
                     onClick={() => onEdit(user)}
@@ -79,7 +83,7 @@ const UserTable = ({ onEdit }) => {
               </tr>
             ))
           ) : (
-            // Show no data message if no users available
+           
             <tr>
               <td colSpan="3" className="py-3 px-6 text-center text-gray-500">No users available</td>
             </tr>

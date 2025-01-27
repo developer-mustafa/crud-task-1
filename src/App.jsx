@@ -3,6 +3,7 @@ import HomePage from './pages/HomePage';
 import AddUserPage from './pages/AddUserPage';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         
         </Routes>
         <ToastContainer />
+          <Footer/>
       </div>
     </Router>
   );

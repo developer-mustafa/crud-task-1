@@ -22,7 +22,7 @@ const HomePage = () => {
 
           {/* Right Column (User Table) */}
           <div className="bg-gradient-to-t from-gray-700 to-gray-800 p-6 rounded-lg shadow-lg">
-            <h2 className="text-3xl font-bold text-white mb-5">User List</h2>
+            <h2 className="text-3xl font-bold text-white mb-5">User List </h2>
             <UserTable onEdit={(user) => setEditingUser(user)} />
           </div>
         </div>
